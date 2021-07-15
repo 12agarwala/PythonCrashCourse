@@ -1,0 +1,23 @@
+sports = ["Soccer", "Basketball", "Baseball", "Table tennis", "Hockey", "Cricket"]
+print(sports)
+sports[2] = 'Golf'
+print(sports)
+sports.append('Baseball')
+print(sports)
+sports.insert(2, 'Swimming')
+print(sports)
+del sports[6]
+print(sports)
+popped_sports = sports.pop(2)
+print(sports)
+print(popped_sports)
+sports.remove('Golf')
+print(sports)
+sports.sort()
+print(sports)
+sports.sort(reverse=True)
+print(sports)
+print(sorted(sports))
+sports.reverse()
+print(sports)
+print(len(sports))
