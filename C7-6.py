@@ -6,7 +6,7 @@ while i == 1:
     else:
         print("I will add", toppings, "to the list")
         print("If your are done, type quit")
-
+#or
 toppings = 1
 while toppings != 'quit':
     toppings = input("Please enter the toppings for your pizza: ")
