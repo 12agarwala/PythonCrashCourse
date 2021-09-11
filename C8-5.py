@@ -1,6 +1,8 @@
-def describe_city(cityName, cityCountry):
-    print(f"{cityName.title()} is in {cityCountry.title()}")
+def describe_city(City, Country):
+    if Country == "":
+        Country = 'China'
+    print(f"{City.title()} is in {Country.title()}")
 
 describe_city('London', 'England')
-describe_city('Cairo', 'Egypt')
-describe_city('Paris', 'France')
+describe_city('Cairo', '')
+describe_city('Paris', '')
