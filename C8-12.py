@@ -1,5 +1,5 @@
 def sandwich_toppings (type, size, *toppings):
-    print("Your sandwich type is", type, 'the bread size is', size, 'and the following toppings')
+    print("Your sandwich type is", type, "the bread size is", size, "and the following toppings")
     print(toppings)
 #main program start here
 bread_type = input("Please enter what type of bread you want for your sandwich: ")
