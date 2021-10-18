@@ -12,7 +12,7 @@ def bus():
     global userInputBus
     while userInputBus.lower() != 'a' and userInputBus.lower() != 'b' and userInputBus.lower() != 'c' and userInputBus.lower() != 'd' and userInputBus.lower() != 'e' and userInputBus.lower() != 'f':
         print('Invalid input! Please enter the correct bus letter.')
-        userInputBus = input("Please enter the correct bus letter (in lowercase letters): ")
+        userInputBus = input("Please enter the correct bus letter: ")
     print("Valid input entered.")
 
 
