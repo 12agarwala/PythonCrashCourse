@@ -41,7 +41,7 @@ for i in range(20):
     try:
         inputBusValue = int(input(f"Please enter a number for bus {userInputBus.title()}: "))
     except ValueError:
-        inputBusValue = int(input(f"Please enter a NUMBER for bus {userInputBus.title()}: "))
+        continue
     if userInputBus == 'a':
         busA.append(inputBusValue)
     elif userInputBus == 'b':
