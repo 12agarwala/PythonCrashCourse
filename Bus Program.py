@@ -119,6 +119,26 @@ def userDayChecker():
         print(f"Bus {userInputBus.title()} was {weekChecker()[3] * -1} minutes late on Thursday.")
     elif userDayCheckerDay.lower() == 'fri' and weekChecker()[4] < 0:
         print(f"Bus {userInputBus.title()} was {weekChecker()[4] * -1} minutes late on Friday.")
+    elif userDayCheckerDay.lower() == 'mon2' and weekChecker()[5] < 0:
+        print(f"Bus {userInputBus.title()} was {weekChecker()[5] * -1} minutes late on Monday Week 2.")
+    elif userDayCheckerDay.lower() == 'tue2' and weekChecker()[6] < 0:
+        print(f"Bus {userInputBus.title()} was {weekChecker()[6] * -1} minutes late on Tuesday Week 2.")
+    elif userDayCheckerDay.lower() == 'wed2' and weekChecker()[7] < 0:
+        print(f"Bus {userInputBus.title()} was {weekChecker()[7] * -1} minutes late on Wednesday Week 2.")
+    elif userDayCheckerDay.lower() == 'thu2' and weekChecker()[8] < 0:
+        print(f"Bus {userInputBus.title()} was {weekChecker()[8] * -1} minutes late on Thursday Week 2.")
+    elif userDayCheckerDay.lower() == 'fri2' and weekChecker()[9] < 0:
+        print(f"Bus {userInputBus.title()} was {weekChecker()[9] * -1} minutes late on Friday Week 2.")
+    elif userDayCheckerDay.lower() == 'mon3' and weekChecker()[10] < 0:
+        print(f"Bus {userInputBus.title()} was {weekChecker()[10] * -1} minutes late on Monday Week 3.")
+    elif userDayCheckerDay.lower() == 'tue3' and weekChecker()[11] < 0:
+        print(f"Bus {userInputBus.title()} was {weekChecker()[11] * -1} minutes late on Tuesday Week 3.")
+    elif userDayCheckerDay.lower() == 'wed3' and weekChecker()[12] < 0:
+        print(f"Bus {userInputBus.title()} was {weekChecker()[12] * -1} minutes late on Wednesday Week 3.")
+    elif userDayCheckerDay.lower() == 'thu3' and weekChecker()[13] < 0:
+        print(f"Bus {userInputBus.title()} was {weekChecker()[13] * -1} minutes late on Thursday Week 3.")
+    elif userDayCheckerDay.lower() == 'fri3' and weekChecker()[14] < 0:
+        print(f"Bus {userInputBus.title()} was {weekChecker()[14] * -1} minutes late on Friday Week 3.")
     else:
         print(f"Bus {userInputBus.title()} was not late on {userDayCheckerDay.title()}!")
 
