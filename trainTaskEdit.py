@@ -40,7 +40,7 @@ def getSeatsRemaining(time):
 
 def seatsDigitChecker(variable):
     if variable == 0:
-        return ''
+        return '      '
     elif variable < 10:
         return '     '
     elif variable < 100:
@@ -53,7 +53,7 @@ def seatsDigitChecker(variable):
 
 def moneyDigitChecker(variable):
     if variable < 10:
-        return ''
+        return '    '
     elif variable < 100:
         return '   '
     elif variable < 1000:
@@ -114,7 +114,7 @@ def updateMoneyTaken(schedule, groupAmount):
     totalUserMoney += moneyEarned[schedule - 9]
 
 
-def tryFunction(variable, inputText, returnText):
+def tryFunction(inputText, returnText):
     while True:
         try:
             variable = int(input(inputText))
@@ -135,13 +135,12 @@ def purchaseTickets():
 # If more than 80 is entered, user will keep being asked to enter the correct amount - 1-80 until they do.
     printTable()
     while (userPurchaseTickets < 1) or (userPurchaseTickets > 80):
-        userPurchaseTickets = tryFunction(userPurchaseTickets, "How many tickets do you want to purchase? ", "Please enter a number from 1-80. ")
+        userPurchaseTickets = tryFunction("How many tickets do you want to purchase? ", "Please enter a number from 1-80. ")
 # Only ticket timings which are available, can be purchased from. User will choose from data table.
 # If other number is entered, user will be asked to enter correct timing till they do.
     printTable()
     while True:
-        ticketLeaveTime = tryFunction(ticketLeaveTime, "What time would you like to leave? ",
-                                      "Please enter a number.")
+        ticketLeaveTime = tryFunction("What time would you like to leave? ", "Please enter a number.")
         if (ticketLeaveTime == 9) or (ticketLeaveTime == 11) or (ticketLeaveTime == 13) or (ticketLeaveTime == 15):
             break
 # Data table is updated here depending on user choices.
@@ -151,8 +150,7 @@ def purchaseTickets():
     saveData.append(str(ticketLeaveTime))
     printTable()
     while True:
-        ticketReturnTime = tryFunction(ticketReturnTime, "What time would you like to return? ",
-                                       "Please enter a number.")
+        ticketReturnTime = tryFunction("What time would you like to return? ", "Please enter a number.")
         if (ticketReturnTime == 10) or (ticketReturnTime == 12) or (ticketReturnTime == 14) or (ticketReturnTime == 16):
             break
     seatsRemaining[ticketReturnTime - 9] -= userPurchaseTickets
