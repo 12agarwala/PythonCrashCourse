@@ -144,7 +144,7 @@ def purchaseTickets():
         if (ticketLeaveTime == 9) or (ticketLeaveTime == 11) or (ticketLeaveTime == 13) or (ticketLeaveTime == 15):
             break
 # Data table is updated here depending on user choices.
-# Total number of tickets will be reduced and cost fo ticket will be displayed.
+# Total number of tickets will be reduced and cost for ticket will be displayed.
     seatsRemaining[ticketLeaveTime - 9] -= userPurchaseTickets
     updateMoneyTaken(ticketLeaveTime, userPurchaseTickets)
     saveData.append(str(ticketLeaveTime))
